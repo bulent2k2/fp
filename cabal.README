@@ -1,0 +1,76 @@
+*4 game-tree (Dec 16, 2014)
+> cd Documents\fp
+> cabal unpack game-tree
+C:\Users\bbasaran\Documents\fp>cabal unpack game-tree
+Warning: The package list for 'hackage.haskell.org' is 17 days old.
+Run 'cabal update' to get the latest list of available packages.
+Downloading game-tree-0.1.0.0...
+Unpacking to game-tree-0.1.0.0\
+
+C:\Users\bbasaran\Documents\fp>
+> cabal update
+Downloading the latest package list from hackage.haskell.org
+Note: there is a new version of cabal-install available.
+To upgrade, run: cabal install cabal-install
+
+> cabal install cabal-install
+Resolving dependencies...
+Downloading network-2.6.0.2...
+Downloading network-uri-2.6.0.1...
+Configuring network-uri-2.6.0.1...
+Configuring network-2.6.0.2...
+Building network-uri-2.6.0.1...
+Failed to install network-2.6.0.2
+Last 10 lines of the build log ( C:\Users\bbasaran\AppData\Roaming\cabal\logs\network-2.6.0.2.log ):
+[1 of 1] Compiling Main             ( C:\Users\bbasaran\AppData\Local\Temp\network-2.6.0.2-59528\network-2.6.0.2\dist\setup\setup.hs, C:\Users\bbasaran\AppData\Local\Temp\network-2.6.0.2-59528\network-2.6.0.2\dist\setup\Main.o )
+Linking C:\Users\bbasaran\AppData\Local\Temp\network-2.6.0.2-59528\network-2.6.0.2\dist\setup\setup.exe ...
+Configuring network-2.6.0.2...
+setup.exe: The package has a './configure' script. This requires a Unix
+compatibility toolchain such as MinGW+MSYS or Cygwin.
+Installed network-uri-2.6.0.1
+cabal: Error: some packages failed to install:
+HTTP-4000.2.18 depends on network-2.6.0.2 which failed to install.
+cabal-install-1.20.0.4 depends on network-2.6.0.2 which failed to install.
+network-2.6.0.2 failed during the configure step. The exception was:
+ExitFailure 1
+
+C:\Users\bbasaran\Documents\fp>
+*3 C:\Users\bbasaran\Documents\fp>cabal unpack parconc-examples
+Downloading parconc-examples-0.3.4...
+Unpacking to parconc-examples-0.3.4\
+
+C:\Users\bbasaran\Documents\fp>
+
+*1 C:\Users\bbasaran> cabal --version
+cabal-install version 1.18.0.5
+using version 1.18.1.3 of the Cabal library
+
+C:\Users\bbasaran>
+
+*2 C:\Users\bbasaran\Documents\fp> cabal unpack parconc-examples
+Config file path source is default config file.
+Config file C:\Users\bbasaran\AppData\Roaming\cabal\config not found.
+Writing default configuration to
+C:\Users\bbasaran\AppData\Roaming\cabal\config
+Warning: The package list for 'hackage.haskell.org' does not exist. Run 'cabal
+update' to download it.
+cabal: There is no package named 'parconc-examples'.
+You may need to run 'cabal update' to get the latest list of available
+packages.
+** C:\Users\bbasaran\Documents\fp>cabal update
+Downloading the latest package list from hackage.haskell.org
+Note: there is a new version of cabal-install available.
+To upgrade, run: cabal install cabal-install
+** C:\Users\bbasaran\Documents\fp>cabal install cabal-install
+Resolving dependencies...
+Downloading Cabal-1.20.0.2...
+Configuring Cabal-1.20.0.2...
+Building Cabal-1.20.0.2...
+Installed Cabal-1.20.0.2
+Downloading cabal-install-1.20.0.3...
+Configuring cabal-install-1.20.0.3...
+Building cabal-install-1.20.0.3...
+Installed cabal-install-1.20.0.3
+
+C:\Users\bbasaran\Documents\fp>
+* The end

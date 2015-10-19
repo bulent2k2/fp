@@ -1,0 +1,51 @@
+* Also see: test.hs and lab4.hs
+
+* flip foldr const
+* discussion posted 2 days ago by FundamentalAxiom
+
+This among other questions make me feel completely lost and I would appreciate any help in filling in the gap in my understanding: Starting with basics:
+Prelude> :t flip
+flip :: (a -> b -> c) -> b -> a -> c
+Prelude> :t foldr
+foldr :: (a -> b -> b) -> b -> [a] -> b
+Prelude> :t const
+const :: a -> b -> a
+I understand that flip takes a function (of type a->b->c) as its first argument. I don't understand how the following works:
+Prelude> :t flip foldr
+flip foldr :: b -> (a -> b -> b) -> [a] -> b
+Specifically, I feel I don't fully understand how to evaluate the type of the function "flip foldr", a function that gets passed another function that doesn't quite fit the type requirements of the first argument. To be honest, I did not even expect it to be pass the type-checker as foldr doesn't seem to be of the type (a->b->c).
+The following is also confusing:
+Prelude> :t flip (+1)
+flip (+1) :: Num (b -> c) => b -> (b -> c) -> c
+Again, I don't get how (+1) which is of the Num a => a -> a gets accepted as the first argument to flip which requires a function of type (a->b->c).
+
+* dtkinzer
+2 days ago
+type (a -> b) is more general than type (a -> a) which means you can pass a function of type (a -> a) to another function that expects a function of type (a -> b) as input.
+In other words a function of type (a -> b -> c) is any function that takes two arguments and returns something. But a function of (a -> b -> b) is a function that takes two arguments but the result has to be the same type as the type of the second argument. Further a function of type (a -> a -> a) is even more restrictive because once the first type is determined then the type of the second and the result must match.
+
+* pbl64k
+flip takes a binary function f x y and returns another function g that is identical to f but takes its arguments in reverse order.
+> To be honest, I did not even expect it to be pass the type-checker as foldr doesn't seem to be of the type (a->b->c).
+Certainly it is! Type of foldr is (a -> b -> b) -> b -> [a] -> b, or, equivalently (d -> e -> e) -> e -> ([d] -> e). What would a, b and c be if we rewrite the type in this form?
+flip (+ 1) is a little bit pointless, as instantiating it would require a Num instance for the function type b -> c. Note that the fact that something typechecks doesn't mean that it's useful.
+
+* Thanks! That clarified a lot of things! I think I understand it better.
+About flip (+ 1), I am just trying things out to clearly understand types (not really focusing on usefulness), I could have as well have used flip id.
+Prelude> :t flip id
+flip id :: b -> (b -> c) -> c
+Extending what you explained, id can only be a function of type (a->b->c) if passed an argument of type b->c (ie., a has type b->c). And that probably explains the type for flip id.
+posted 2 days ago by FundamentalAxiom
+ 
+* Precisely. We can make that formal and derive the type of flip id rigorously.
+flip expects an a -> b -> c, or, equivalently, an a -> (b -> c). id has type d -> d (remember that we can change the names of type variables as long as we're consistent about it).
+To match these two types, we need to accept that d is the same as b -> c. Substituting this into the type of id we get (b -> c) -> b -> c. Since a is also the same as d, we also get the fact that a is the same as b -> c. Now we can simply substitute these types into the return type of flip (b -> a -> c), and we get b -> (b -> c) -> c.
+ 
+posted 2 days ago by pbl64k
+
+By the way, unlike flip (+ 1), flip id can be useful. It's known as the T-combinator in combinatory logic and serves as an important building block in various encodings in lambda calculus and CL. (One of classical representations of cons cell constructor would be flip . flip id in Haskell-speak.)
+It's also known as |> in F#. Those guys just l-l-love it.
+ 
+* posted 2 days ago by pbl64k
+I guess I have a long way to go in FP land. Taking baby steps for now! Thanks for helping out!
+* posted a day ago by FundamentalAxiom

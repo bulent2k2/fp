@@ -1,0 +1,57 @@
+Programming in Haskell -- Errata
+
+Pages 7, 8, 9 and 11. Appendix B shows how the special Haskell symbols that are used in the book are typed using a normal keyboard. This appendix is mentioned on page 12, but should have been mentioned earlier and more prominently.
+Page 20. The additional "such as" in the second paragraph should be removed.
+Page 24. The phrase "is a instance" in the explanation of the type of + should be "is an instance".
+Pages 23, 42, 43, 62, 64, 71, 72, 79 and 80. The use of library functions on characters requires the Char library to be loaded, otherwise the Hugs system will produce an error. See the entry for pages 158 and 159 below for further details.
+Page 44. The library function fromInt has been replaced by a more general function called fromIntegral. (*)
+Page 57. The word "removing" in the second paragraph should be "remove".
+Page 60. The type for halve in exercise 5 should be as follows: (*)
+   halve :: [a] -> ([a],[a])
+Page 66. The definition for the append operator ++ using foldr is not valid Haskell, due to the use of a section on the left-hand side of the definition, but is a valid property of ++.
+Page 67. The definition for the append operator ++ using foldl is not intended to be recursive, otherwise it won't terminate. In particular, the use of ++ in the body is supposed to refer to the prelude version. The following definition for an append function has the correct behaviour:
+   append   :: [a] -> [a] -> [a]
+   append xs = foldl (\ys y -> ys ++ [y]) xs
+Pages 74 to 78. For technical reasons concerning the monadic nature of parsers, a number of the basic definitions cannot be entered directly as shown in the text, otherwise the Hugs system will produce an error. A link to a library file that makes the necessary changes, and suggestions for further reading on the connection between parsers and monads, is given in the chapter remarks on page 85.
+Page 76. The function result defined in the first line should be called return, and the result of the first parse example should be [(1,"abc")]. (*)
+Page 89. The action putChar 'a' writes the character a to the screen, rather than 'a'.
+Page 90. The action getCh is no longer provided as a primitive in Hugs, but can be defined in Haskell as follows:
+   import System.IO 
+
+   getCh :: IO Char
+   getCh  = do hSetEcho stdin False
+               c <- getChar
+               hSetEcho stdin True
+               return c
+This definition works with the Glasgow Haskell Compiler, but may not work with some Haskell systems, such as Hugs.
+
+Page 91. The control characters used to define the actions beep, cls, and goto (x,y) may not work on some Haskell systems, such as WinHugs.
+Page 94. The sentence beginning "That is, we can think of the board as really being a torus," should conclude "which can be viewed as the surface of a three-dimensional doughnut shaped object". (*)
+Page 115. The keyword type in exercise 3 should be data.
+Page 120. The number "33, 665, 406" should be formatted as "33,665,406" with no spaces. The same comment applies to the other large numbers in this chapter.
+Page 127. The word "rational" in the last line should be "rationale".
+Page 136. The example evaluation for sumwith should have expressions of the form sumwith $! v xs parenthesised as (sumwith $! v) xs.
+Page 140. The additional "their" in the second paragraph should be removed.
+Page 146. The expression [x] ++ ys on the fourth line should be [x] ++ xs, and the base case calculation should be as follows: (*)
+     reverse ([] ++ ys)
+   =   { applying ++ }
+     reverse ys
+   =   { property of ++, see exercise 5 }
+     reverse ys ++ []
+   =   { unapplying reverse }
+     reverse ys ++ reverse []
+Page 147. The first "the" in the last paragraph should be "than".
+Page 148. The definition for reverse on the second last line should be as follows: (*)
+   reverse = foldl (\xs x -> x : xs) []
+Page 149. The word "trees-like" in the first paragraph should be "tree-like".
+Page 151. The word "to" on the second line should be removed. (*)
+Page 152. The variable ys on the last line should be d. (*)
+Page 155. The first "a" in exercise 9 should be removed.
+Pages 158 and 159. The character functions isLower, isUpper, isAlpha, isDigit, isAlphaNum, isSpace, ord, chr, digitToInt, intToDigit, toLower, and toUpper listed in section A.3 are no longer part of the standard prelude, but are included in a separate library called Char. This library can be loaded in a Hugs session by entering the following command at the > prompt:
+   :load Char
+It can be loaded in a Haskell script by including the following declaration at the start of the script:
+
+   import Char
+Page 161. The library function or decides if any logical value in a list is True, not False. (*)
+Page 167. The journal "Communications of the ACM" in reference 11 should be "ACM Computing Surveys".
+Many thanks to Ki Yung Ahn, Paul Brown, Bob Davison, Sergio Queiroz de Medeiros, David Duke, Robert Fabian, Ben Fleis, Robert Furber, Philip Hölzenspies, Andrew Kish, Tomoyas Kobayashi, Florian Larysch, Carlos Oroz, Douglas Philips, Bruce Turner, Gregor Ulm, Marco Valtorta, and Kazu Yamamoto for pointing out errors. Errata items marked (*) have been corrected in the second printing of the book, September 2007.
