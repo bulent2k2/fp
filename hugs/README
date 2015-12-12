@@ -1,0 +1,4 @@
+To start hugs with extensions, use bash alias
+(See: ~/.bashrc -- Thanks to MINGW32 from Git Bash/Git GUI)
+bash> cd Documents/fp/hugs
+bash> hugs
