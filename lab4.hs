@@ -80,6 +80,7 @@ fix2 = h2 fix2
 -- ex 18/19
 f = \f n -> if (n==0) then 1 else n*f(n-1)
 k = fix $ f
+k3 = fix f
 -- LEARN GO FIGURE??
 -- k :: Integer -> Integer
 -- LEARN: IS POLYMORPHIC AND IS OVERLOADED! WHY??

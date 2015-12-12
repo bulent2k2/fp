@@ -1,0 +1,30 @@
+%APPDATA%\cabal\bin
+c:/Users/bbasaran/AppData/Roaming/cabal/bin/
+
+(find-file "c:/Program Files/Haskell Platform/2014.2.0.0/lib/package.conf.d/package.cache" t)
+(find-file "c:/Program Files/Haskell Platform/2014.2.0.0/mingw/libexec/gcc/x86_64-w64-mingw32/4.6.3" t)
+
+$ ghc-pkg list
+WARNING: cache is out of date: c:/Program Files/Haskell Platform/2014.2.0.0\lib\package.conf.d\package.cache
+Use 'ghc-pkg recache' to fix.
+c:/Program Files/Haskell Platform/2014.2.0.0\lib\package.conf.d:
+    Cabal-1.18.1.3
+    GLURaw-1.4.0.1
+    GLUT-2.5.1.1
+...
+
+
+C:\Users\bbasaran\AppData\Roaming\ghc\x86_64-mingw32-7.8.3\package.conf.d
+    Cabal-1.22.4.0
+    StateVar-1.1.0.1
+    adjunctions-4.2.2
+    base-orphans-0.4.4
+
+
+c:/Users/bbasaran/AppData/Roaming/ghc/x86_64-mingw32-7.8.3/package.conf.d/wxc-0.92.1.1-016d59eabfa256fa5877df8a03d16908.conf
+
+
+
+"C:\Program Files\Haskell Platform\2014.2.0.0\mingw\libexec\gcc\x86_64-w64-mingw32\4.6.3"
+"C:/Program Files/Haskell Platform/2014.2.0.0/mingw/libexec/gcc/x86_64-w64-mingw32/4.6.3"
+"c:/Program Files/Haskell Platform/2014.2.0.0/mingw/libexec/gcc/x86_64-w64-mingw32/4.6.3/cc1plus.exe"

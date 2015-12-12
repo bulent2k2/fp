@@ -1,0 +1,18 @@
+use from bash: ~/bin/stack.exe
+
+./stack
+
+To build:
+bash> cd ~/fp/stack
+bash> stack
+bash> stack build
+
+To run:
+bash> stack ghci
+
+
+Build log:
+~/fp/stack/.stack-work/logs
+
+~/fp/stack/src/main/Main.hs
+~/fp/stack/test/integration/tests/skip-unreachable-dirs/Main.hs

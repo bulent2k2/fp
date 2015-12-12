@@ -1,5 +1,7 @@
 import Prelude hiding ((^),length,init,drop,and,concat,(!!))
 
+-- TODO: there is an example on mutual recursion, where??
+
 -- merge sorted lists into one big sorted list
 -- TODO: use this to implement merge sort!
 merge :: Ord a => [a] -> [a] -> [a]

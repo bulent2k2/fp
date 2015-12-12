@@ -46,7 +46,7 @@ twice f x = f (f x)
 f a b c = a * b * c
 -- The type (e.g., f above)
 --   a -> b -> c -> d
--- means: in type defn, associates to right -- CURRYING.. func inputs a type a and returns a function that inputs (b->(c->d))..
+-- means: in type defn, associates to right -- CURRYING.. func inputs a type a and returns a function that has type: (b->(c->d))..
 --   a -> (b -> (c -> d))
 -- LEARN
 -- The expression f a b c means (in expr, associates to left)
