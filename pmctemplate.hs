@@ -1,40 +1,74 @@
--- original template: ./pmctemplate.hs
-
 module Lab5 where
+
 import Control.Monad
+
 data Concurrent a = Concurrent ((a -> Action) -> Action)
+
 data Action 
     = Atom (IO Action)
     | Fork Action Action
     | Stop
+
 instance Show Action where
     show (Atom x) = "atom"
     show (Fork x y) = "fork " ++ show x ++ " " ++ show y
     show Stop = "stop"
--- lab work starts here:
+
+-- ===================================
+-- Ex. 0
+-- ===================================
+
 action :: Concurrent a -> Action
-action (Concurrent ma) = ma (\x -> Stop)
+action = error "You have to implement action"
+
+
+-- ===================================
+-- Ex. 1
+-- ===================================
+
 stop :: Concurrent a
-stop = Concurrent( \f -> Stop )
+stop = error "You have to implement stop"
+
+
+-- ===================================
+-- Ex. 2
+-- ===================================
+
 atom :: IO a -> Concurrent a
-atom x = Concurrent(\c -> Atom (x >>= return . c))
+atom = error "You have to implement atom"
+
+
+-- ===================================
+-- Ex. 3
+-- ===================================
+
 fork :: Concurrent a -> Concurrent ()
-fork m = Concurrent (\c -> Fork (action m) (c ()))
+fork = error "You have to implement fork"
+
 par :: Concurrent a -> Concurrent a -> Concurrent a
-par (Concurrent m1) (Concurrent m2) = Concurrent (\c -> Fork (m1 c) (m2 c))
-helper :: Concurrent a -> (a->Action) -> Action
-helper (Concurrent m) = m
+par = error "You have to implement par"
+
+
+-- ===================================
+-- Ex. 4
+-- ===================================
+
 instance Monad Concurrent where
-    (Concurrent f) >>= k = Concurrent (\c -> f (\x -> helper (k x) c))
+    (Concurrent f) >>= g = error "You have to implement >>="
     return x = Concurrent (\c -> c x)
+
+
+-- ===================================
+-- Ex. 5
+-- ===================================
+
 roundRobin :: [Action] -> IO ()
-roundRobin [] = return ()
-roundRobin (a:as) = case a of
-  Atom (am) -> do
-    a' <- am
-    roundRobin (as ++ [a'])
-  Fork a1 a2 -> roundRobin (as ++ [a1,a2])
-  Stop -> roundRobin as
+roundRobin = error "You have to implement roundRobin"
+
+-- ===================================
+-- Tests
+-- ===================================
+
 ex0 :: Concurrent ()
 ex0 = par (loop (genRandom 1337)) (loop (genRandom 2600) >> atom (putStrLn ""))
 
@@ -43,6 +77,11 @@ ex1 = do atom (putStr "Haskell")
          fork (loop $ genRandom 7331) 
          loop $ genRandom 42
          atom (putStrLn "")
+
+
+-- ===================================
+-- Helper Functions
+-- ===================================
 
 run :: Concurrent a -> IO ()
 run x = roundRobin [action x]

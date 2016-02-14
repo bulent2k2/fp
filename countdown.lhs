@@ -38,6 +38,8 @@ Expressions
 Combinatorial functions
 -----------------------
 
+BBX. All sub-sets of a list including empty and self. Non-unique elems are considered to be unique! But, if list represents a set, this gives us the power set
+
 > subs                          :: [a] -> [[a]]
 > subs []                       =  [[]]
 > subs (x:xs)                   =  yss ++ map (x:) yss
@@ -50,7 +52,11 @@ Combinatorial functions
 > perms                         :: [a] -> [[a]]
 > perms []                      =  [[]]
 > perms (x:xs)                  =  concat (map (interleave x) (perms xs))
->
+
+Find all choices from a list, which are given by all possible ways of selecting zero or more elements in any order.
+BBX. Given a list, get all possible sub-lists including [] and all permutations ([1,2] != [2,1])
+This is truly explosive: 3 elems -> 16 choices. 7 elems -> More than 13k choices! 8 elems -> > 100k. 12 elems, don't do it!
+
 > choices                       :: [a] -> [[a]]
 > choices xs                    =  [zs | ys <- subs xs , zs <- perms ys]
 

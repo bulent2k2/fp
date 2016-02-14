@@ -1,6 +1,6 @@
 -- HW 9 - Declaring Types and Classes
 
-module Main (main) where
+module Type (main) where
 import Data.List
 import Data.Char
 import Hugs.IOExts (unsafeCoerce)
@@ -51,18 +51,28 @@ nz = Zero
 n1 = Succ Zero
 n2 = Succ n1
 n3 = Succ n2
-test = print (map n2i [nz,n1,n2,n3])
+test = map n2i [nz,n1,n2,n3]
 test2 = map n [0..]
 
--- test:
+-- test
 main = do
 --  l <- getLine
 --  putStrLn $ reverse l
-  test
-  print $ take 20 $ map n2i $ map i2n [0..]
-  print $ map n2i [add (i2n 10)$i2n 20, add (i2n 0)$i2n 0, add (i2n 0)$i2n 1]
-  print $ map n2i [mult (i2n 0)$i2n 4, mult (i2n 3) (i2n 8)]
-  print $ map (flip occurs t1) [1,2,3,4,5,6,7,0,8]
+  let op = test in print $ "Map n2i over list of nz,n1,n2,n3: " ++ show op
+  let op = take x $ map n2i $ map i2n [0..]
+      x = 9
+      msg = "Take " ++ show x ++ " after map n2i after map i2n on counting numbers: " ++ show op
+      in print msg
+  let op = map n2i [add (i2n 10)$i2n 20, add (i2n 0)$i2n 0, add (i2n 0)$i2n 1]
+      msg = "Map n2i over list of (add 10 20),(add 0 0),(add 0 1):" ++ show op
+      in print msg
+  let op = map n2i [mult (i2n 0)$i2n 4, mult (i2n 3) (i2n 8)]
+      msg = "Map n2i over list of (mult 0 4),(mult 3 8): " ++ show op
+      in  print msg
+  let op = map (flip occurs t1) xs
+      xs = [0..8]
+      msg = "Map (flip occurs t1 -- a sample tree containing 1..7) over " ++ show xs ++ ": " ++ show op
+      in print msg
 
 {- works
 add Zero n = n
