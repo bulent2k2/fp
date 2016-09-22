@@ -1,0 +1,1926 @@
+* NEW in Cygwin bash..
+In ~/.bashrc
+Use python alias!
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~
+$ printenv
+HOMEPATH=\Users\bbasaran
+APPDATA=C:\Users\bbasaran\AppData\Roaming
+ProgramW6432=C:\Program Files
+HOSTNAME=BBASARAN-e7250
+UOIPME_REG_PATH=C:\Program Files\Intel Corporation\USB over IP
+SHELL=/bin/bash
+TERM=xterm
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel
+PROFILEREAD=true
+WINDIR=C:\Windows
+systype=Primary
+PUBLIC=C:\Users\Public
+OLDPWD=/cygdrive/c/Windows/system32
+ORIGINAL_PATH=/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/haskell/lib/extr                                                                                           alibs/bin:/cygdrive/c/haskell/bin:/cygdrive/c/Program Files (x86)/RSA SecurID To                                                                                           ken Common:/cygdrive/c/Program Files (x86)/Intel/iCLS Client:/cygdrive/c/Program                                                                                            Files/Intel/iCLS Client:/cygdrive/c/Windows/system32:/cygdrive/c/Windows:/cygdr                                                                                           ive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0:                                                                                           /cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdr                                                                                           ive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdr                                                                                           ive/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/                                                                                           Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/                                                                                           Program Files/Intel/WiFi/bin:/cygdrive/c/Program Files/Common Files/Intel/Wirele                                                                                           ssCommon:/cygdrive/c/Program Files (x86)/Sennheiser/SoftphoneSDK:/cygdrive/c/Pro                                                                                           gram Files/NetIQ/SecureLogin:/cygdrive/c/Program Files (x86)/Skype/Phone:/cygdri                                                                                           ve/c/haskell/mingw/bin:/cygdrive/c/Users/bbasaran/AppData/Roaming/cabal/bin
+USERDOMAIN=SYNOPSYS
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+UATDATA=C:\Windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77
+OS=Windows_NT
+ALLUSERSPROFILE=C:\ProgramData
+windows_tracing_flags=3
+USER=bbasaran
+windows_tracing_logfile=C:\BVTBin\Tests\installpackage\csilogfile.log
+TEMP=/tmp
+COMMONPROGRAMFILES=C:\Program Files\Common Files
+SiteCode=US01
+USERNAME=bbasaran
+Version_Image=5_1_2012_W7
+PROCESSOR_LEVEL=6
+ProgramFiles(x86)=C:\Program Files (x86)
+PATH=/usr/local/bin:/usr/bin:/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/h                                                                                           askell/lib/extralibs/bin:/cygdrive/c/haskell/bin:/cygdrive/c/Program Files (x86)                                                                                           /RSA SecurID Token Common:/cygdrive/c/Program Files (x86)/Intel/iCLS Client:/cyg                                                                                           drive/c/Program Files/Intel/iCLS Client:/cygdrive/c/Windows/system32:/cygdrive/c                                                                                           /Windows:/cygdrive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsP                                                                                           owerShell/v1.0:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Compon                                                                                           ents/DAL:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Compon                                                                                           ents/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/I                                                                                           PT:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/I                                                                                           PT:/cygdrive/c/Program Files/Intel/WiFi/bin:/cygdrive/c/Program Files/Common Fil                                                                                           es/Intel/WirelessCommon:/cygdrive/c/Program Files (x86)/Sennheiser/SoftphoneSDK:                                                                                           /cygdrive/c/Program Files/NetIQ/SecureLogin:/cygdrive/c/Program Files (x86)/Skyp                                                                                           e/Phone:/cygdrive/c/haskell/mingw/bin:/cygdrive/c/Users/bbasaran/AppData/Roaming                                                                                           /cabal/bin
+PSModulePath=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+FP_NO_HOST_CHECK=NO
+PWD=/cygdrive/c/Users/bbasaran/Documents
+SYSTEMDRIVE=C:
+SerTechID=ccabrera
+LANG=en_US.UTF-8
+USERPROFILE=C:\Users\bbasaran
+TZ=America/New_York
+STACK_ROOT=C:\stack_root
+PS1=\[\e]0;\w\a\]\n\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]\n\$
+LOGONSERVER=\\US04VWADDC
+CommonProgramW6432=C:\Program Files\Common Files
+PROCESSOR_ARCHITECTURE=AMD64
+LOCALAPPDATA=C:\Users\bbasaran\AppData\Local
+ProgramData=C:\ProgramData
+EXECIGNORE=*.dll
+SHLVL=1
+HOME=/cygdrive/c/Users/bbasaran/Documents
+USERDNSDOMAIN=INTERNAL.SYNOPSYS.COM
+TRType=techrefresh
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+HOMEDRIVE=C:
+COMSPEC=C:\Windows\system32\cmd.exe
+TMP=/tmp
+SYSTEMROOT=C:\Windows
+PRINTER=Send To OneNote 2016
+PROCESSOR_REVISION=3d04
+INFOPATH=/usr/local/info:/usr/share/info:/usr/info
+PROGRAMFILES=C:\Program Files
+NUMBER_OF_PROCESSORS=4
+SESSIONNAME=Console
+COMPUTERNAME=BBASARAN-E7250
+_=/usr/bin/printenv
+
+bbasaran@BBASARAN-e7250 ~
+$ cd fp
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ which cabal
+/cygdrive/c/haskell/lib/extralibs/bin/cabal
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ cd parconc-examples-0.3.5
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+** $ cabal install --only-dependencies
+Resolving dependencies...
+Configuring network-2.4.2.3...
+Building network-2.4.2.3...
+Installed network-2.4.2.3
+Downloading HTTP-4000.2.23...
+Downloading network-multicast-0.1.0...
+Downloading network-transport-tcp-0.4.2...
+Configuring network-multicast-0.1.0...
+Configuring HTTP-4000.2.23...
+Configuring network-transport-tcp-0.4.2...
+Building network-multicast-0.1.0...
+Building network-transport-tcp-0.4.2...
+Building HTTP-4000.2.23...
+Installed network-multicast-0.1.0
+Installed network-transport-tcp-0.4.2
+Downloading distributed-process-simplelocalnet-0.2.3.2...
+Configuring distributed-process-simplelocalnet-0.2.3.2...
+Building distributed-process-simplelocalnet-0.2.3.2...
+Installed HTTP-4000.2.23
+Installed distributed-process-simplelocalnet-0.2.3.2
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+** $ cabal build
+Building parconc-examples-0.3.5...
+Preprocessing executable 'rpar' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku1' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku2' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku3' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku4' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku5' for parconc-examples-0.3.5...
+Preprocessing executable 'strat' for parconc-examples-0.3.5...
+Preprocessing executable 'strat2' for parconc-examples-0.3.5...
+Preprocessing executable 'strat3' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa1' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa2' for parconc-examples-0.3.5...
+Preprocessing executable 'kmeans' for parconc-examples-0.3.5...
+Preprocessing executable 'GenSamples' for parconc-examples-0.3.5...
+Preprocessing executable 'parmonad' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa-pipeline' for parconc-examples-0.3.5...
+Preprocessing executable 'fwsparse' for parconc-examples-0.3.5...
+Preprocessing executable 'fwsparse1' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable1' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable2' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable3' for parconc-examples-0.3.5...
+Preprocessing executable 'parinfer' for parconc-examples-0.3.5...
+Preprocessing executable 'fwdense' for parconc-examples-0.3.5...
+Preprocessing executable 'fwdense1' for parconc-examples-0.3.5...
+Preprocessing executable 'fork' for parconc-examples-0.3.5...
+Preprocessing executable 'reminders' for parconc-examples-0.3.5...
+Preprocessing executable 'reminders2' for parconc-examples-0.3.5...
+Preprocessing executable 'mvar1' for parconc-examples-0.3.5...
+Preprocessing executable 'mvar2' for parconc-examples-0.3.5...
+Preprocessing executable 'mvar3' for parconc-examples-0.3.5...
+Preprocessing executable 'logger' for parconc-examples-0.3.5...
+Preprocessing executable 'phonebook' for parconc-examples-0.3.5...
+Preprocessing executable 'chan' for parconc-examples-0.3.5...
+Preprocessing executable 'chan2' for parconc-examples-0.3.5...
+Preprocessing executable 'geturls1' for parconc-examples-0.3.5...
+Linking dist\build\geturls1\geturls1.exe ...
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23                                                                                           -ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake                                                                                           :(.text+0x3241): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23                                                                                           -ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake                                                                                           :(.text+0x39d1): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23                                                                                           -ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake                                                                                           :(.text+0x42a9): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23                                                                                           -ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake                                                                                           :(.text+0x4c01): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o)                                                                                           :fake:(.text+0x2832): undefined reference to `newAcceptParams'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o)                                                                                           :fake:(.text+0x2846): undefined reference to `acceptDoProc'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o)                                                                                           :fake:(.text+0x288c): undefined reference to `acceptNewSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o)                                                                                           :fake:(.text+0xc272): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.                                                                                           o):fake:(.text+0x15b): undefined reference to `getWSErrorDescr'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.                                                                                           o):fake:(.text+0x383): undefined reference to `shutdownWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.                                                                                           o):fake:(.text+0x49b): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.                                                                                           o):fake:(.text+0x5cf): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.                                                                                           o):fake:(.text+0xa00): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):                                                                                           HsNet.c:(.text+0x13): undefined reference to `__imp_getnameinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):                                                                                           HsNet.c:(.text+0x23): undefined reference to `__imp_getaddrinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.                                                                                           3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):                                                                                           HsNet.c:(.text+0x33): undefined reference to `__imp_freeaddrinfo'
+collect2.exe: error: ld returned 1 exit status
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal update
+Downloading the latest package list from hackage.haskell.org
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cd ..
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ cabal unpack parconc-examples
+cabal.exe: The directory "parconc-examples-0.3.5\" already exists, not
+unpacking.
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ rm -rf parconc-examples-0.3.*
+rm: cannot remove 'parconc-examples-0.3.5': Device or resource busy
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ rm -rf parconc-examples-0.3.*
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ cabal unpack parconc-examples
+Unpacking to parconc-examples-0.3.5\
+
+bbasaran@BBASARAN-e7250 ~/fp
+$ cd parconc-examples-0.3.5/
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal install --only-dependencies
+Resolving dependencies...
+All the requested packages are already installed:
+Use --reinstall if you want to reinstall anyway.
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal build
+Package has never been configured. Configuring with default flags. If this
+fails, please run configure manually.
+Resolving dependencies...
+Configuring parconc-examples-0.3.5...
+Building parconc-examples-0.3.5...
+Preprocessing executable 'rpar' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( rpar.hs, dist\build\rpar\rpar-tmp\Main.o )
+Linking dist\build\rpar\rpar.exe ...
+Preprocessing executable 'sudoku1' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku1\sudoku1-tmp\                                                                                           Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku1.hs, dist\build\sudoku1\sudoku1-tmp                                                                                           \Main.o )
+Linking dist\build\sudoku1\sudoku1.exe ...
+Preprocessing executable 'sudoku2' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku2\sudoku2-tmp\                                                                                           Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku2.hs, dist\build\sudoku2\sudoku2-tmp                                                                                           \Main.o )
+Linking dist\build\sudoku2\sudoku2.exe ...
+Preprocessing executable 'sudoku3' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku3\sudoku3-tmp\                                                                                           Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku3.hs, dist\build\sudoku3\sudoku3-tmp                                                                                           \Main.o )
+Linking dist\build\sudoku3\sudoku3.exe ...
+Preprocessing executable 'sudoku4' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku4\sudoku4-tmp\                                                                                           Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku4.hs, dist\build\sudoku4\sudoku4-tmp                                                                                           \Main.o )
+Linking dist\build\sudoku4\sudoku4.exe ...
+Preprocessing executable 'sudoku5' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku5\sudoku5-tmp\                                                                                           Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku5.hs, dist\build\sudoku5\sudoku5-tmp                                                                                           \Main.o )
+Linking dist\build\sudoku5\sudoku5.exe ...
+Preprocessing executable 'strat' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat.hs, dist\build\strat\strat-tmp\Main.                                                                                           o )
+Linking dist\build\strat\strat.exe ...
+Preprocessing executable 'strat2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat2.hs, dist\build\strat2\strat2-tmp\Ma                                                                                           in.o )
+Linking dist\build\strat2\strat2.exe ...
+Preprocessing executable 'strat3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat3.hs, dist\build\strat3\strat3-tmp\Main.o )
+Linking dist\build\strat3\strat3.exe ...
+Preprocessing executable 'rsa' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa\rsa-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa.hs, dist\build\rsa\rsa-tmp\Main.o )
+
+rsa.hs:60:42: Warning: Tab character
+
+rsa.hs:68:1: Warning: Tab character
+
+rsa.hs:89:1: Warning: Tab character
+Linking dist\build\rsa\rsa.exe ...
+Preprocessing executable 'rsa1' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa1\rsa1-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa1.hs, dist\build\rsa1\rsa1-tmp\Main.o )
+
+rsa1.hs:62:42: Warning: Tab character
+
+rsa1.hs:70:1: Warning: Tab character
+
+rsa1.hs:91:1: Warning: Tab character
+Linking dist\build\rsa1\rsa1.exe ...
+Preprocessing executable 'rsa2' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa2\rsa2-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa2.hs, dist\build\rsa2\rsa2-tmp\Main.o )
+
+rsa2.hs:62:42: Warning: Tab character
+
+rsa2.hs:70:1: Warning: Tab character
+
+rsa2.hs:91:1: Warning: Tab character
+Linking dist\build\rsa2\rsa2.exe ...
+Preprocessing executable 'kmeans' for parconc-examples-0.3.5...
+[1 of 2] Compiling KMeansCore       ( kmeans\KMeansCore.hs, dist\build\kmeans\kmeans-tmp\KMeansCore.o )
+[2 of 2] Compiling Main             ( kmeans\kmeans.hs, dist\build\kmeans\kmeans-tmp\Main.o )
+Linking dist\build\kmeans\kmeans.exe ...
+Preprocessing executable 'GenSamples' for parconc-examples-0.3.5...
+[1 of 2] Compiling KMeansCore       ( kmeans\KMeansCore.hs, dist\build\GenSamples\GenSamples-tmp\KMeansCore.o )
+[2 of 2] Compiling Main             ( kmeans\GenSamples.hs, dist\build\GenSamples\GenSamples-tmp\Main.o )
+Linking dist\build\GenSamples\GenSamples.exe ...
+Preprocessing executable 'parmonad' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( parmonad.hs, dist\build\parmonad\parmonad-tmp\Main.o )
+Linking dist\build\parmonad\parmonad.exe ...
+Preprocessing executable 'rsa-pipeline' for parconc-examples-0.3.5...
+[1 of 3] Compiling Stream           ( Stream.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\Stream.o )
+[2 of 3] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\ByteStringCompat.o )
+[3 of 3] Compiling Main             ( rsa-pipeline.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\Main.o )
+
+rsa-pipeline.hs:69:42: Warning: Tab character
+
+rsa-pipeline.hs:77:1: Warning: Tab character
+
+rsa-pipeline.hs:98:1: Warning: Tab character
+Linking dist\build\rsa-pipeline\rsa-pipeline.exe ...
+Preprocessing executable 'fwsparse' for parconc-examples-0.3.5...
+[1 of 3] Compiling SparseGraph      ( fwsparse\SparseGraph.hs, dist\build\fwsparse\fwsparse-tmp\SparseGraph.o )
+[2 of 3] Compiling MapCompat        ( fwsparse\MapCompat.hs, dist\build\fwsparse\fwsparse-tmp\MapCompat.o )
+[3 of 3] Compiling Main             ( fwsparse\fwsparse.hs, dist\build\fwsparse\fwsparse-tmp\Main.o )
+Linking dist\build\fwsparse\fwsparse.exe ...
+Preprocessing executable 'fwsparse1' for parconc-examples-0.3.5...
+[1 of 3] Compiling SparseGraph      ( fwsparse\SparseGraph.hs, dist\build\fwsparse1\fwsparse1-tmp\SparseGraph.o )
+[2 of 3] Compiling MapCompat        ( fwsparse\MapCompat.hs, dist\build\fwsparse1\fwsparse1-tmp\MapCompat.o )
+[3 of 3] Compiling Main             ( fwsparse\fwsparse1.hs, dist\build\fwsparse1\fwsparse1-tmp\Main.o )
+
+fwsparse\fwsparse1.hs:12:1: Warning:
+    The import of `Data.Traversable' is redundant
+      except perhaps to import instances from `Data.Traversable'
+    To import instances alone, use: import Data.Traversable()
+Linking dist\build\fwsparse1\fwsparse1.exe ...
+Preprocessing executable 'timetable' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable.hs, dist\build\timetable\timetable-tmp\Main.o )
+Linking dist\build\timetable\timetable.exe ...
+Preprocessing executable 'timetable1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable1.hs, dist\build\timetable1\timetable1-tmp\Main.o )
+Linking dist\build\timetable1\timetable1.exe ...
+Preprocessing executable 'timetable2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable2.hs, dist\build\timetable2\timetable2-tmp\Main.o )
+Linking dist\build\timetable2\timetable2.exe ...
+Preprocessing executable 'timetable3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable3.hs, dist\build\timetable3\timetable3-tmp\Main.o )
+Linking dist\build\timetable3\timetable3.exe ...
+Preprocessing executable 'parinfer' for parconc-examples-0.3.5...
+[ 1 of 14] Compiling Shows            ( parinfer\Shows.hs, dist\build\parinfer\parinfer-tmp\Shows.o )
+[ 2 of 14] Compiling StateX           ( parinfer\StateX.hs, dist\build\parinfer\parinfer-tmp\StateX.o )
+[ 3 of 14] Compiling MaybeM           ( parinfer\MaybeM.hs, dist\build\parinfer\parinfer-tmp\MaybeM.o )
+[ 4 of 14] Compiling MyList           ( parinfer\MyList.hs, dist\build\parinfer\parinfer-tmp\MyList.o )
+[ 5 of 14] Compiling FiniteMap        ( parinfer\FiniteMap.hs, dist\build\parinfer\parinfer-tmp\FiniteMap.o )
+[ 6 of 14] Compiling Type             ( parinfer\Type.hs, dist\build\parinfer\parinfer-tmp\Type.o )
+
+parinfer\Type.hs:42:35: Warning: Tab character
+
+parinfer\Type.hs:44:11: Warning: Tab character
+
+parinfer\Type.hs:44:31: Warning: Tab character
+[ 7 of 14] Compiling Substitution     ( parinfer\Substitution.hs, dist\build\parinfer\parinfer-tmp\Substitution.o )
+[ 8 of 14] Compiling InferMonad       ( parinfer\InferMonad.hs, dist\build\parinfer\parinfer-tmp\InferMonad.o )
+
+parinfer\InferMonad.hs:50:1: Warning: Tab character
+
+parinfer\InferMonad.hs:51:1: Warning: Tab character
+[ 9 of 14] Compiling Term             ( parinfer\Term.hs, dist\build\parinfer\parinfer-tmp\Term.o )
+[10 of 14] Compiling Environment      ( parinfer\Environment.hs, dist\build\parinfer\parinfer-tmp\Environment.o )
+[11 of 14] Compiling Infer            ( parinfer\Infer.hs, dist\build\parinfer\parinfer-tmp\Infer.o )
+
+parinfer\Infer.hs:32:2: Warning: Tab character
+
+parinfer\Infer.hs:33:1: Warning: Tab character
+
+parinfer\Infer.hs:34:1: Warning: Tab character
+[12 of 14] Compiling Lex              ( dist\build\parinfer\parinfer-tmp\Lex.hs, dist\build\parinfer\parinfer-tmp\Lex.o )
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:329:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:330:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:331:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:335:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:336:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:340:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:342:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:346:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:348:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:352:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:361:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:375:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:377:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:378:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:379:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:381:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:382:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:383:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:384:5: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:386:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:389:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:390:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:391:1: Warning:
+    Tab character
+[13 of 14] Compiling Parse            ( dist\build\parinfer\parinfer-tmp\Parse.hs, dist\build\parinfer\parinfer-tmp\Parse.o )
+[14 of 14] Compiling Main             ( parinfer\parinfer.hs, dist\build\parinfer\parinfer-tmp\Main.o )
+Linking dist\build\parinfer\parinfer.exe ...
+Preprocessing executable 'fwdense' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fwdense.hs, dist\build\fwdense\fwdense-tmp\Main.o )
+Linking dist\build\fwdense\fwdense.exe ...
+Preprocessing executable 'fwdense1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fwdense1.hs, dist\build\fwdense1\fwdense1-tmp\Main.o )
+Linking dist\build\fwdense1\fwdense1.exe ...
+Preprocessing executable 'fork' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fork.hs, dist\build\fork\fork-tmp\Main.o )
+Linking dist\build\fork\fork.exe ...
+
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal configure
+Resolving dependencies...
+Configuring parconc-examples-0.3.5...
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal build
+Building parconc-examples-0.3.5...
+Preprocessing executable 'rpar' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku1' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku2' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku3' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku4' for parconc-examples-0.3.5...
+Preprocessing executable 'sudoku5' for parconc-examples-0.3.5...
+Preprocessing executable 'strat' for parconc-examples-0.3.5...
+Preprocessing executable 'strat2' for parconc-examples-0.3.5...
+Preprocessing executable 'strat3' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa1' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa2' for parconc-examples-0.3.5...
+Preprocessing executable 'kmeans' for parconc-examples-0.3.5...
+Preprocessing executable 'GenSamples' for parconc-examples-0.3.5...
+Preprocessing executable 'parmonad' for parconc-examples-0.3.5...
+Preprocessing executable 'rsa-pipeline' for parconc-examples-0.3.5...
+Preprocessing executable 'fwsparse' for parconc-examples-0.3.5...
+Preprocessing executable 'fwsparse1' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable1' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable2' for parconc-examples-0.3.5...
+Preprocessing executable 'timetable3' for parconc-examples-0.3.5...
+Preprocessing executable 'parinfer' for parconc-examples-0.3.5...
+Preprocessing executable 'fwdense' for parconc-examples-0.3.5...
+Preprocessing executable 'fwdense1' for parconc-examples-0.3.5...
+Preprocessing executable 'fork' for parconc-examples-0.3.5...
+Preprocessing executable 'reminders' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( reminders.hs, dist\build\reminders\reminders-tmp\Main.o )
+Linking dist\build\reminders\reminders.exe ...
+Preprocessing executable 'reminders2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( reminders2.hs, dist\build\reminders2\reminders2-tmp\Main.o )
+Linking dist\build\reminders2\reminders2.exe ...
+Preprocessing executable 'mvar1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar1.hs, dist\build\mvar1\mvar1-tmp\Main.o )
+Linking dist\build\mvar1\mvar1.exe ...
+Preprocessing executable 'mvar2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar2.hs, dist\build\mvar2\mvar2-tmp\Main.o )
+Linking dist\build\mvar2\mvar2.exe ...
+Preprocessing executable 'mvar3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar3.hs, dist\build\mvar3\mvar3-tmp\Main.o )
+Linking dist\build\mvar3\mvar3.exe ...
+Preprocessing executable 'logger' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( logger.hs, dist\build\logger\logger-tmp\Main.o )
+Linking dist\build\logger\logger.exe ...
+Preprocessing executable 'phonebook' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( phonebook.hs, dist\build\phonebook\phonebook-tmp\Main.o )
+Linking dist\build\phonebook\phonebook.exe ...
+Preprocessing executable 'chan' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( chan.hs, dist\build\chan\chan-tmp\Main.o )
+Linking dist\build\chan\chan.exe ...
+Preprocessing executable 'chan2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( chan2.hs, dist\build\chan2\chan2-tmp\Main.o )
+Linking dist\build\chan2\chan2.exe ...
+Preprocessing executable 'geturls1' for parconc-examples-0.3.5...
+[1 of 2] Compiling GetURL           ( GetURL.hs, dist\build\geturls1\geturls1-tmp\GetURL.o )
+[2 of 2] Compiling Main             ( geturls1.hs, dist\build\geturls1\geturls1-tmp\Main.o )
+Linking dist\build\geturls1\geturls1.exe ...
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x3241): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x39d1): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x42a9): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x4c01): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x2832): undefined reference to `newAcceptParams'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x2846): undefined reference to `acceptDoProc'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x288c): undefined reference to `acceptNewSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0xc272): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x15b): undefined reference to `getWSErrorDescr'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x383): undefined reference to `shutdownWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x49b): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x5cf): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0xa00): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x13): undefined reference to `__imp_getnameinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x23): undefined reference to `__imp_getaddrinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x33): undefined reference to `__imp_freeaddrinfo'
+collect2.exe: error: ld returned 1 exit status
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal help
+Command line interface to the Haskell Cabal infrastructure.
+
+See http://www.haskell.org/cabal/ for more information.
+
+Usage: cabal.exe [GLOBAL FLAGS] [COMMAND [FLAGS]]
+
+Commands:
+ [global]
+  update         Updates list of known packages.
+  install        Install packages.
+
+  help           Help about commands.
+  info           Display detailed information about a particular package.
+  list           List packages matching a search string.
+  fetch          Downloads packages for later installation.
+  user-config    Display and update the user's global cabal configuration.
+
+ [package]
+  get            Download/Extract a package's source code (repository).
+  init           Create a new .cabal package file (interactively).
+
+  configure      Prepare to build the package.
+  build          Compile all/specific components.
+  clean          Clean up after a build.
+
+  run            Builds and runs an executable.
+  repl           Open an interpreter session for the given component.
+  test           Run all/specific tests in the test suite.
+  bench          Run all/specific benchmarks.
+
+  check          Check the package for common mistakes.
+  sdist          Generate a source distribution file (.tar.gz).
+  upload         Uploads source packages to Hackage.
+  report         Upload build reports to a remote server.
+
+  freeze         Freeze dependencies.
+  haddock        Generate Haddock HTML documentation.
+  hscolour       Generate HsColour colourised code, in HTML format.
+  copy           Copy the files into the install locations.
+  register       Register this package with the compiler.
+
+ [sandbox]
+  sandbox        Create/modify/delete a sandbox.
+  exec           Give a command access to the sandbox package repository.
+  repl           Open interpreter with access to sandbox packages.
+
+For more information about a command use:
+   cabal.exe COMMAND --help
+or cabal.exe help COMMAND
+
+To install Cabal packages from hackage use:
+  cabal.exe install foo [--dry-run]
+
+Occasionally you need to update the list of available packages:
+  cabal.exe update
+
+Global flags:
+ -h --help                     Show this help text
+ -V --version                  Print version information
+    --numeric-version          Print just the version number
+    --config-file=FILE         Set an alternate location for the config file
+    --sandbox-config-file=FILE Set an alternate location for the sandbox config
+                               file (default: './cabal.sandbox.config')
+    --require-sandbox          Enable requiring the presence of a sandbox for
+                               sandbox-aware commands
+    --no-require-sandbox       Disable requiring the presence of a sandbox for
+                               sandbox-aware commands
+    --ignore-sandbox           Ignore any existing sandbox
+
+You can edit the cabal configuration file to set defaults:
+  C:\Users\bbasaran\AppData\Roaming\cabal\config
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal clean
+cleaning...
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ h
+-bash: h: command not found
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ history
+    1  tclsh
+    2  tclsh85
+    3  exit
+    4  pwd
+    5  git help git
+    6  pwd
+    7  ls
+    8  cd Documents/
+    9  ls
+   10  which emacs
+   11  echo $PATH
+   12  ls bin
+   13  ls /usr/local/bin
+   14  ls /mingw/bin
+   15  ls /
+   16  cd /
+   17  ls
+   18  ls bin
+   19  vim
+   20  which wim
+   21  which vim
+   22  tclsh85
+   23  cd bin
+   24  ls
+   25  ls *.exe
+   26  wish
+   27  cd ..
+   28  ls
+   29  ls cmd
+   30  ls lib/engines/
+   31  ls Git/
+   32  pwd
+   33  ll
+   34  ls
+   35  ls -l
+   36  pwd
+   37  ls bin
+   38  awk
+   39  exit
+   40  cd Downloads/
+   41  ls
+   42  ls *.gz
+   43  gtar -xf pycscope-0.2.tar
+   44  tar -xf pycscope-0.2.tar
+   45  rm pycscope-0.2.tar
+   46  rm -r pycscope-0.2.tar
+   47  tar -zxf pycscope-0.2.tar.gz
+   48  ls pycscope-0.2
+   49  /c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   50  alias python=/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   51  python
+   52  alias python="/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe"
+   53  python
+   54  echo ~
+   55  exit
+   56  cd Downloads/
+   57  cd pycscope-0.2
+   58  ls
+   59  pycscope.py -R
+   60  pycscope.py -R
+   61  pycscope.py -R
+   62  cd /c/p4
+   63  ls
+   64  cd bbasaran_laptop/
+   65  ls
+   66  cd custom
+   67  ls
+   68  cd helix
+   69  ls
+   70  cd ..
+   71  ls
+   72  pycscope.py -R
+   73  ~/../Downloads/pycscope.py -R
+   74  alias pyscope=/c/Users/bbasaran/Downloads/pycscope-0.2/pycscope.py
+   75  pyscope -R
+   76  pyscope -R
+   77  pyscope -R
+   78  pyscope -R
+   79  pyscope -R
+   80  pyscope -R
+   81  pyscope -R
+   82  pyscope -R
+   83  pyscope -R
+   84  pyscope -R
+   85  pyscope -R
+   86  pyscope -R
+   87  pyscope -R
+   88  pyscope -R
+   89  pyscope -R
+   90  pyscope -R
+   91  pyscope -R
+   92  pyscope -R
+   93  pyscope -R
+   94  pyscope -R
+   95  pyscope -R
+   96  pyscope -R
+   97  pyscope -R
+   98  pyscope -R
+   99  pyscope -R
+  100  pyscope -R
+  101  pyscope -R
+  102  pyscope -R
+  103  pyscope -R
+  104  pyscope -R
+  105  pyscope -R
+  106  pyscope -R
+  107  pyscope -R
+  108  pyscope -R
+  109  pyscope -R
+  110  pyscope -R
+  111  pyscope -R
+  112  pyscope -R
+  113  pyscope -R
+  114  pyscope -R
+  115  pyscope -R
+  116  pyscope -R
+  117  pyscope -R
+  118  pyscope -R
+  119  pyscope -R
+  120  pyscope -R
+  121  pyscope -R
+  122  pyscope -R
+  123  pyscope -R
+  124  pyscope -R
+  125  pyscope -R
+  126  pyscope -R
+  127  pyscope -R
+  128  pyscope -R
+  129  pyscope -R
+  130  pyscope -R
+  131  pwd
+  132  exit
+  133  cd Documents/fp
+  134  cd stack
+  135  stack ghc
+  136  stack ghci
+  137  pwd
+  138  df .
+  139  tcsh
+  140  tclsh
+  141  which
+  142  echo $PATH
+  143  stack
+  144  pwd
+  145  stack ghci
+  146  hugs
+  147  exit
+  148  printenv
+  149  cd fp
+  150  which cabal
+  151  cd parconc-examples-0.3.5
+  152  cabal install --only-dependencies
+  153  cabal build
+  154  cabal update
+  155  cd ..
+  156  cabal unpack parconc-examples
+  157  rm -rf parconc-examples-0.3.*
+  158  rm -rf parconc-examples-0.3.*
+  159  cabal unpack parconc-examples
+  160  cd parconc-examples-0.3.5/
+  161  cabal install --only-dependencies
+  162  cabal build
+  163  cabal configure
+  164  cabal build
+  165  cabal help
+  166  cabal clean
+  167  h
+  168  history
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias!
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias!
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias!
+-bash: $'\r': command not found
+here
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias\!
+-bash: $'\r': command not found
+here
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias\!
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ source ~/.bashrc
+In ~/.bashrc
+Use python alias
+-bash: $'\r': command not found
+Finished ~/.bashrc
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ h
+-bash: $'history\r': command not found
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ history
+    1  tclsh
+    2  tclsh85
+    3  exit
+    4  pwd
+    5  git help git
+    6  pwd
+    7  ls
+    8  cd Documents/
+    9  ls
+   10  which emacs
+   11  echo $PATH
+   12  ls bin
+   13  ls /usr/local/bin
+   14  ls /mingw/bin
+   15  ls /
+   16  cd /
+   17  ls
+   18  ls bin
+   19  vim
+   20  which wim
+   21  which vim
+   22  tclsh85
+   23  cd bin
+   24  ls
+   25  ls *.exe
+   26  wish
+   27  cd ..
+   28  ls
+   29  ls cmd
+   30  ls lib/engines/
+   31  ls Git/
+   32  pwd
+   33  ll
+   34  ls
+   35  ls -l
+   36  pwd
+   37  ls bin
+   38  awk
+   39  exit
+   40  cd Downloads/
+   41  ls
+   42  ls *.gz
+   43  gtar -xf pycscope-0.2.tar
+   44  tar -xf pycscope-0.2.tar
+   45  rm pycscope-0.2.tar
+   46  rm -r pycscope-0.2.tar
+   47  tar -zxf pycscope-0.2.tar.gz
+   48  ls pycscope-0.2
+   49  /c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   50  alias python=/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   51  python
+   52  alias python="/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe"
+   53  python
+   54  echo ~
+   55  exit
+   56  cd Downloads/
+   57  cd pycscope-0.2
+   58  ls
+   59  pycscope.py -R
+   60  pycscope.py -R
+   61  pycscope.py -R
+   62  cd /c/p4
+   63  ls
+   64  cd bbasaran_laptop/
+   65  ls
+   66  cd custom
+   67  ls
+   68  cd helix
+   69  ls
+   70  cd ..
+   71  ls
+   72  pycscope.py -R
+   73  ~/../Downloads/pycscope.py -R
+   74  alias pyscope=/c/Users/bbasaran/Downloads/pycscope-0.2/pycscope.py
+   75  pyscope -R
+   76  pyscope -R
+   77  pyscope -R
+   78  pyscope -R
+   79  pyscope -R
+   80  pyscope -R
+   81  pyscope -R
+   82  pyscope -R
+   83  pyscope -R
+   84  pyscope -R
+   85  pyscope -R
+   86  pyscope -R
+   87  pyscope -R
+   88  pyscope -R
+   89  pyscope -R
+   90  pyscope -R
+   91  pyscope -R
+   92  pyscope -R
+   93  pyscope -R
+   94  pyscope -R
+   95  pyscope -R
+   96  pyscope -R
+   97  pyscope -R
+   98  pyscope -R
+   99  pyscope -R
+  100  pyscope -R
+  101  pyscope -R
+  102  pyscope -R
+  103  pyscope -R
+  104  pyscope -R
+  105  pyscope -R
+  106  pyscope -R
+  107  pyscope -R
+  108  pyscope -R
+  109  pyscope -R
+  110  pyscope -R
+  111  pyscope -R
+  112  pyscope -R
+  113  pyscope -R
+  114  pyscope -R
+  115  pyscope -R
+  116  pyscope -R
+  117  pyscope -R
+  118  pyscope -R
+  119  pyscope -R
+  120  pyscope -R
+  121  pyscope -R
+  122  pyscope -R
+  123  pyscope -R
+  124  pyscope -R
+  125  pyscope -R
+  126  pyscope -R
+  127  pyscope -R
+  128  pyscope -R
+  129  pyscope -R
+  130  pyscope -R
+  131  pwd
+  132  exit
+  133  cd Documents/fp
+  134  cd stack
+  135  stack ghc
+  136  stack ghci
+  137  pwd
+  138  df .
+  139  tcsh
+  140  tclsh
+  141  which
+  142  echo $PATH
+  143  stack
+  144  pwd
+  145  stack ghci
+  146  hugs
+  147  exit
+  148  printenv
+  149  cd fp
+  150  which cabal
+  151  cd parconc-examples-0.3.5
+  152  cabal install --only-dependencies
+  153  cabal build
+  154  cabal update
+  155  cd ..
+  156  cabal unpack parconc-examples
+  157  rm -rf parconc-examples-0.3.*
+  158  rm -rf parconc-examples-0.3.*
+  159  cabal unpack parconc-examples
+  160  cd parconc-examples-0.3.5/
+  161  cabal install --only-dependencies
+  162  cabal build
+  163  cabal configure
+  164  cabal build
+  165  cabal help
+  166  cabal clean
+  167  h
+  168  history
+  169  source ~/.bashrc
+  170  source ~/.bashrc
+  171  source ~/.bashrc
+  172  source ~/.bashrc
+  173  source ~/.bashrc
+  174  source ~/.bashrc
+  175  source ~/.bashrc
+  176  h
+  177  history
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ where h
+INFO: Could not find files for the given pattern(s).
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ which h
+which: no h in (/usr/local/bin:/usr/bin:/cygdrive/c/Program Files/Haskell/bin:/cygdrive/c/haskell/lib/extralibs/bin:/cygdrive/c/haskell/bin:/cygdrive/c/Program Files (x86)/RSA SecurID Token Common:/cygdrive/c/Program Files (x86)/Intel/iCLS Client:/cygdrive/c/Program Files/Intel/iCLS Client:/cygdrive/c/Windows/system32:/cygdrive/c/Windows:/cygdrive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Program Files/Intel/WiFi/bin:/cygdrive/c/Program Files/Common Files/Intel/WirelessCommon:/cygdrive/c/Program Files (x86)/Sennheiser/SoftphoneSDK:/cygdrive/c/Program Files/NetIQ/SecureLogin:/cygdrive/c/Program Files (x86)/Skype/Phone:/cygdrive/c/haskell/mingw/bin:/cygdrive/c/Users/bbasaran/AppData/Roaming/cabal/bin)
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ help where
+-bash: help: no help topics match `where'.  Try `help help' or `man -k where' or `info where'.
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ where help
+C:\Windows\System32\help.exe
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ where where
+C:\Windows\System32\where.exe
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ a h
+-bash: a: command not found
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ alias h
+'lias h='history
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ h
+-bash: $'history\r': command not found
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ history
+    1  tclsh
+    2  tclsh85
+    3  exit
+    4  pwd
+    5  git help git
+    6  pwd
+    7  ls
+    8  cd Documents/
+    9  ls
+   10  which emacs
+   11  echo $PATH
+   12  ls bin
+   13  ls /usr/local/bin
+   14  ls /mingw/bin
+   15  ls /
+   16  cd /
+   17  ls
+   18  ls bin
+   19  vim
+   20  which wim
+   21  which vim
+   22  tclsh85
+   23  cd bin
+   24  ls
+   25  ls *.exe
+   26  wish
+   27  cd ..
+   28  ls
+   29  ls cmd
+   30  ls lib/engines/
+   31  ls Git/
+   32  pwd
+   33  ll
+   34  ls
+   35  ls -l
+   36  pwd
+   37  ls bin
+   38  awk
+   39  exit
+   40  cd Downloads/
+   41  ls
+   42  ls *.gz
+   43  gtar -xf pycscope-0.2.tar
+   44  tar -xf pycscope-0.2.tar
+   45  rm pycscope-0.2.tar
+   46  rm -r pycscope-0.2.tar
+   47  tar -zxf pycscope-0.2.tar.gz
+   48  ls pycscope-0.2
+   49  /c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   50  alias python=/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   51  python
+   52  alias python="/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe"
+   53  python
+   54  echo ~
+   55  exit
+   56  cd Downloads/
+   57  cd pycscope-0.2
+   58  ls
+   59  pycscope.py -R
+   60  pycscope.py -R
+   61  pycscope.py -R
+   62  cd /c/p4
+   63  ls
+   64  cd bbasaran_laptop/
+   65  ls
+   66  cd custom
+   67  ls
+   68  cd helix
+   69  ls
+   70  cd ..
+   71  ls
+   72  pycscope.py -R
+   73  ~/../Downloads/pycscope.py -R
+   74  alias pyscope=/c/Users/bbasaran/Downloads/pycscope-0.2/pycscope.py
+   75  pyscope -R
+   76  pyscope -R
+   77  pyscope -R
+   78  pyscope -R
+   79  pyscope -R
+   80  pyscope -R
+   81  pyscope -R
+   82  pyscope -R
+   83  pyscope -R
+   84  pyscope -R
+   85  pyscope -R
+   86  pyscope -R
+   87  pyscope -R
+   88  pyscope -R
+   89  pyscope -R
+   90  pyscope -R
+   91  pyscope -R
+   92  pyscope -R
+   93  pyscope -R
+   94  pyscope -R
+   95  pyscope -R
+   96  pyscope -R
+   97  pyscope -R
+   98  pyscope -R
+   99  pyscope -R
+  100  pyscope -R
+  101  pyscope -R
+  102  pyscope -R
+  103  pyscope -R
+  104  pyscope -R
+  105  pyscope -R
+  106  pyscope -R
+  107  pyscope -R
+  108  pyscope -R
+  109  pyscope -R
+  110  pyscope -R
+  111  pyscope -R
+  112  pyscope -R
+  113  pyscope -R
+  114  pyscope -R
+  115  pyscope -R
+  116  pyscope -R
+  117  pyscope -R
+  118  pyscope -R
+  119  pyscope -R
+  120  pyscope -R
+  121  pyscope -R
+  122  pyscope -R
+  123  pyscope -R
+  124  pyscope -R
+  125  pyscope -R
+  126  pyscope -R
+  127  pyscope -R
+  128  pyscope -R
+  129  pyscope -R
+  130  pyscope -R
+  131  pwd
+  132  exit
+  133  cd Documents/fp
+  134  cd stack
+  135  stack ghc
+  136  stack ghci
+  137  pwd
+  138  df .
+  139  tcsh
+  140  tclsh
+  141  which
+  142  echo $PATH
+  143  stack
+  144  pwd
+  145  stack ghci
+  146  hugs
+  147  exit
+  148  printenv
+  149  cd fp
+  150  which cabal
+  151  cd parconc-examples-0.3.5
+  152  cabal install --only-dependencies
+  153  cabal build
+  154  cabal update
+  155  cd ..
+  156  cabal unpack parconc-examples
+  157  rm -rf parconc-examples-0.3.*
+  158  rm -rf parconc-examples-0.3.*
+  159  cabal unpack parconc-examples
+  160  cd parconc-examples-0.3.5/
+  161  cabal install --only-dependencies
+  162  cabal build
+  163  cabal configure
+  164  cabal build
+  165  cabal help
+  166  cabal clean
+  167  h
+  168  history
+  169  source ~/.bashrc
+  170  source ~/.bashrc
+  171  source ~/.bashrc
+  172  source ~/.bashrc
+  173  source ~/.bashrc
+  174  source ~/.bashrc
+  175  source ~/.bashrc
+  176  h
+  177  history
+  178  where h
+  179  which h
+  180  help where
+  181  where help
+  182  where where
+  183  a h
+  184  alias h
+  185  h
+  186  history
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ !161
+cabal install --only-dependencies
+Resolving dependencies...
+All the requested packages are already installed:
+Use --reinstall if you want to reinstall anyway.
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal install --only-dependencies --reinstall
+Resolving dependencies...
+All the requested packages are already installed:
+Use --reinstall if you want to reinstall anyway.
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ ls
+AccelerateCompat.hs  deadlock1.hs     fork.hs         geturls6.hs        modifytwo.hs            reminders2.hs    strat3.hs           sudoku-par2.hs  timetable2.hs
+Async.hs             deadlock2.hs     fwaccel.hs      geturls7.hs        mvar1.hs                rotateimage.hs   Stream.hs           sudoku-par3.hs  timetable3.hs
+ByteStringCompat.hs  distrib-chat     fwaccel-gpu.hs  geturls8.hs        mvar2.hs                rpar.hs          Sudoku.hs           sudoku-par4.hs  TList.hs
+CasIORef.hs          distrib-db       fwdense.hs      geturls9.hs        mvar3.hs                rsa.hs           sudoku1.hs          TBQueue.hs      tmvar.hs
+catch-mask.hs        distrib-ping     fwdense1.hs     geturlscancel.hs   mvar4.hs                rsa1.hs          sudoku17.1000.txt   TChan.hs        TQueue.hs
+catch-mask2.hs       DistribUtils.hs  fwsparse        geturlscancel2.hs  other                   rsa2.hs          sudoku17.16000.txt  threadperf1.hs  windowman.hs
+chan.hs              findpar.hs       GetURL.hs       geturlsfirst.hs    parconc-examples.cabal  rsa-pipeline.hs  sudoku17.49151.txt  threadperf2.hs
+chan2.hs             findpar2.hs      geturls1.hs     geturlsstm.hs      parinfer                server.hs        sudoku2.hs          TimeIt.hs
+chan3.hs             findpar3.hs      geturls2.hs     kmeans             parlist.hs              server2.hs       sudoku3.hs          timeout.hs
+chanbench.hs         findpar4.hs      geturls3.hs     LICENSE            parmonad.hs             Setup.hs         sudoku4.hs          timeout2.hs
+chat.hs              findpar5.hs      geturls4.hs     logger.hs          phonebook.hs            strat.hs         sudoku5.hs          timetable.hs
+ConcurrentUtils.hs   findseq.hs       geturls5.hs     mandel             reminders.hs            strat2.hs        sudoku-par1.hs      timetable1.hs
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ history
+    1  tclsh
+    2  tclsh85
+    3  exit
+    4  pwd
+    5  git help git
+    6  pwd
+    7  ls
+    8  cd Documents/
+    9  ls
+   10  which emacs
+   11  echo $PATH
+   12  ls bin
+   13  ls /usr/local/bin
+   14  ls /mingw/bin
+   15  ls /
+   16  cd /
+   17  ls
+   18  ls bin
+   19  vim
+   20  which wim
+   21  which vim
+   22  tclsh85
+   23  cd bin
+   24  ls
+   25  ls *.exe
+   26  wish
+   27  cd ..
+   28  ls
+   29  ls cmd
+   30  ls lib/engines/
+   31  ls Git/
+   32  pwd
+   33  ll
+   34  ls
+   35  ls -l
+   36  pwd
+   37  ls bin
+   38  awk
+   39  exit
+   40  cd Downloads/
+   41  ls
+   42  ls *.gz
+   43  gtar -xf pycscope-0.2.tar
+   44  tar -xf pycscope-0.2.tar
+   45  rm pycscope-0.2.tar
+   46  rm -r pycscope-0.2.tar
+   47  tar -zxf pycscope-0.2.tar.gz
+   48  ls pycscope-0.2
+   49  /c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   50  alias python=/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe
+   51  python
+   52  alias python="/c/Program\ Files\ \(x86\)/Synopsys/PyCellStudio/plat_win_64/3rd/python266/python.exe"
+   53  python
+   54  echo ~
+   55  exit
+   56  cd Downloads/
+   57  cd pycscope-0.2
+   58  ls
+   59  pycscope.py -R
+   60  pycscope.py -R
+   61  pycscope.py -R
+   62  cd /c/p4
+   63  ls
+   64  cd bbasaran_laptop/
+   65  ls
+   66  cd custom
+   67  ls
+   68  cd helix
+   69  ls
+   70  cd ..
+   71  ls
+   72  pycscope.py -R
+   73  ~/../Downloads/pycscope.py -R
+   74  alias pyscope=/c/Users/bbasaran/Downloads/pycscope-0.2/pycscope.py
+   75  pyscope -R
+   76  pyscope -R
+   77  pyscope -R
+   78  pyscope -R
+   79  pyscope -R
+   80  pyscope -R
+   81  pyscope -R
+   82  pyscope -R
+   83  pyscope -R
+   84  pyscope -R
+   85  pyscope -R
+   86  pyscope -R
+   87  pyscope -R
+   88  pyscope -R
+   89  pyscope -R
+   90  pyscope -R
+   91  pyscope -R
+   92  pyscope -R
+   93  pyscope -R
+   94  pyscope -R
+   95  pyscope -R
+   96  pyscope -R
+   97  pyscope -R
+   98  pyscope -R
+   99  pyscope -R
+  100  pyscope -R
+  101  pyscope -R
+  102  pyscope -R
+  103  pyscope -R
+  104  pyscope -R
+  105  pyscope -R
+  106  pyscope -R
+  107  pyscope -R
+  108  pyscope -R
+  109  pyscope -R
+  110  pyscope -R
+  111  pyscope -R
+  112  pyscope -R
+  113  pyscope -R
+  114  pyscope -R
+  115  pyscope -R
+  116  pyscope -R
+  117  pyscope -R
+  118  pyscope -R
+  119  pyscope -R
+  120  pyscope -R
+  121  pyscope -R
+  122  pyscope -R
+  123  pyscope -R
+  124  pyscope -R
+  125  pyscope -R
+  126  pyscope -R
+  127  pyscope -R
+  128  pyscope -R
+  129  pyscope -R
+  130  pyscope -R
+  131  pwd
+  132  exit
+  133  cd Documents/fp
+  134  cd stack
+  135  stack ghc
+  136  stack ghci
+  137  pwd
+  138  df .
+  139  tcsh
+  140  tclsh
+  141  which
+  142  echo $PATH
+  143  stack
+  144  pwd
+  145  stack ghci
+  146  hugs
+  147  exit
+  148  printenv
+  149  cd fp
+  150  which cabal
+  151  cd parconc-examples-0.3.5
+  152  cabal install --only-dependencies
+  153  cabal build
+  154  cabal update
+  155  cd ..
+  156  cabal unpack parconc-examples
+  157  rm -rf parconc-examples-0.3.*
+  158  rm -rf parconc-examples-0.3.*
+  159  cabal unpack parconc-examples
+  160  cd parconc-examples-0.3.5/
+  161  cabal install --only-dependencies
+  162  cabal build
+  163  cabal configure
+  164  cabal build
+  165  cabal help
+  166  cabal clean
+  167  h
+  168  history
+  169  source ~/.bashrc
+  170  source ~/.bashrc
+  171  source ~/.bashrc
+  172  source ~/.bashrc
+  173  source ~/.bashrc
+  174  source ~/.bashrc
+  175  source ~/.bashrc
+  176  h
+  177  history
+  178  where h
+  179  which h
+  180  help where
+  181  where help
+  182  where where
+  183  a h
+  184  alias h
+  185  h
+  186  history
+  187  cabal install --only-dependencies
+  188  cabal install --only-dependencies --reinstall
+  189  ls
+  190  history
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ echo $SHELL
+/bin/bash
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal  configure
+Resolving dependencies...
+Configuring parconc-examples-0.3.5...
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$ cabal build
+Building parconc-examples-0.3.5...
+Preprocessing executable 'rpar' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( rpar.hs, dist\build\rpar\rpar-tmp\Main.o )
+Linking dist\build\rpar\rpar.exe ...
+Preprocessing executable 'sudoku1' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku1\sudoku1-tmp\Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku1.hs, dist\build\sudoku1\sudoku1-tmp\Main.o )
+Linking dist\build\sudoku1\sudoku1.exe ...
+Preprocessing executable 'sudoku2' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku2\sudoku2-tmp\Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku2.hs, dist\build\sudoku2\sudoku2-tmp\Main.o )
+Linking dist\build\sudoku2\sudoku2.exe ...
+Preprocessing executable 'sudoku3' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku3\sudoku3-tmp\Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku3.hs, dist\build\sudoku3\sudoku3-tmp\Main.o )
+Linking dist\build\sudoku3\sudoku3.exe ...
+Preprocessing executable 'sudoku4' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku4\sudoku4-tmp\Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku4.hs, dist\build\sudoku4\sudoku4-tmp\Main.o )
+Linking dist\build\sudoku4\sudoku4.exe ...
+Preprocessing executable 'sudoku5' for parconc-examples-0.3.5...
+[1 of 2] Compiling Sudoku           ( Sudoku.hs, dist\build\sudoku5\sudoku5-tmp\Sudoku.o )
+[2 of 2] Compiling Main             ( sudoku5.hs, dist\build\sudoku5\sudoku5-tmp\Main.o )
+Linking dist\build\sudoku5\sudoku5.exe ...
+Preprocessing executable 'strat' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat.hs, dist\build\strat\strat-tmp\Main.o )
+Linking dist\build\strat\strat.exe ...
+Preprocessing executable 'strat2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat2.hs, dist\build\strat2\strat2-tmp\Main.o )
+Linking dist\build\strat2\strat2.exe ...
+Preprocessing executable 'strat3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( strat3.hs, dist\build\strat3\strat3-tmp\Main.o )
+Linking dist\build\strat3\strat3.exe ...
+Preprocessing executable 'rsa' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa\rsa-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa.hs, dist\build\rsa\rsa-tmp\Main.o )
+
+rsa.hs:60:42: Warning: Tab character
+
+rsa.hs:68:1: Warning: Tab character
+
+rsa.hs:89:1: Warning: Tab character
+Linking dist\build\rsa\rsa.exe ...
+Preprocessing executable 'rsa1' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa1\rsa1-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa1.hs, dist\build\rsa1\rsa1-tmp\Main.o )
+
+rsa1.hs:62:42: Warning: Tab character
+
+rsa1.hs:70:1: Warning: Tab character
+
+rsa1.hs:91:1: Warning: Tab character
+Linking dist\build\rsa1\rsa1.exe ...
+Preprocessing executable 'rsa2' for parconc-examples-0.3.5...
+[1 of 2] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa2\rsa2-tmp\ByteStringCompat.o )
+[2 of 2] Compiling Main             ( rsa2.hs, dist\build\rsa2\rsa2-tmp\Main.o )
+
+rsa2.hs:62:42: Warning: Tab character
+
+rsa2.hs:70:1: Warning: Tab character
+
+rsa2.hs:91:1: Warning: Tab character
+Linking dist\build\rsa2\rsa2.exe ...
+Preprocessing executable 'kmeans' for parconc-examples-0.3.5...
+[1 of 2] Compiling KMeansCore       ( kmeans\KMeansCore.hs, dist\build\kmeans\kmeans-tmp\KMeansCore.o )
+[2 of 2] Compiling Main             ( kmeans\kmeans.hs, dist\build\kmeans\kmeans-tmp\Main.o )
+Linking dist\build\kmeans\kmeans.exe ...
+Preprocessing executable 'GenSamples' for parconc-examples-0.3.5...
+[1 of 2] Compiling KMeansCore       ( kmeans\KMeansCore.hs, dist\build\GenSamples\GenSamples-tmp\KMeansCore.o )
+[2 of 2] Compiling Main             ( kmeans\GenSamples.hs, dist\build\GenSamples\GenSamples-tmp\Main.o )
+Linking dist\build\GenSamples\GenSamples.exe ...
+Preprocessing executable 'parmonad' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( parmonad.hs, dist\build\parmonad\parmonad-tmp\Main.o )
+Linking dist\build\parmonad\parmonad.exe ...
+Preprocessing executable 'rsa-pipeline' for parconc-examples-0.3.5...
+[1 of 3] Compiling Stream           ( Stream.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\Stream.o )
+[2 of 3] Compiling ByteStringCompat ( ByteStringCompat.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\ByteStringCompat.o )
+[3 of 3] Compiling Main             ( rsa-pipeline.hs, dist\build\rsa-pipeline\rsa-pipeline-tmp\Main.o )
+
+rsa-pipeline.hs:69:42: Warning: Tab character
+
+rsa-pipeline.hs:77:1: Warning: Tab character
+
+rsa-pipeline.hs:98:1: Warning: Tab character
+Linking dist\build\rsa-pipeline\rsa-pipeline.exe ...
+Preprocessing executable 'fwsparse' for parconc-examples-0.3.5...
+[1 of 3] Compiling SparseGraph      ( fwsparse\SparseGraph.hs, dist\build\fwsparse\fwsparse-tmp\SparseGraph.o )
+[2 of 3] Compiling MapCompat        ( fwsparse\MapCompat.hs, dist\build\fwsparse\fwsparse-tmp\MapCompat.o )
+[3 of 3] Compiling Main             ( fwsparse\fwsparse.hs, dist\build\fwsparse\fwsparse-tmp\Main.o )
+Linking dist\build\fwsparse\fwsparse.exe ...
+Preprocessing executable 'fwsparse1' for parconc-examples-0.3.5...
+[1 of 3] Compiling SparseGraph      ( fwsparse\SparseGraph.hs, dist\build\fwsparse1\fwsparse1-tmp\SparseGraph.o )
+[2 of 3] Compiling MapCompat        ( fwsparse\MapCompat.hs, dist\build\fwsparse1\fwsparse1-tmp\MapCompat.o )
+[3 of 3] Compiling Main             ( fwsparse\fwsparse1.hs, dist\build\fwsparse1\fwsparse1-tmp\Main.o )
+
+fwsparse\fwsparse1.hs:12:1: Warning:
+    The import of `Data.Traversable' is redundant
+      except perhaps to import instances from `Data.Traversable'
+    To import instances alone, use: import Data.Traversable()
+Linking dist\build\fwsparse1\fwsparse1.exe ...
+Preprocessing executable 'timetable' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable.hs, dist\build\timetable\timetable-tmp\Main.o )
+Linking dist\build\timetable\timetable.exe ...
+Preprocessing executable 'timetable1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable1.hs, dist\build\timetable1\timetable1-tmp\Main.o )
+Linking dist\build\timetable1\timetable1.exe ...
+Preprocessing executable 'timetable2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable2.hs, dist\build\timetable2\timetable2-tmp\Main.o )
+Linking dist\build\timetable2\timetable2.exe ...
+Preprocessing executable 'timetable3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( timetable3.hs, dist\build\timetable3\timetable3-tmp\Main.o )
+Linking dist\build\timetable3\timetable3.exe ...
+Preprocessing executable 'parinfer' for parconc-examples-0.3.5...
+[ 1 of 14] Compiling Shows            ( parinfer\Shows.hs, dist\build\parinfer\parinfer-tmp\Shows.o )
+[ 2 of 14] Compiling StateX           ( parinfer\StateX.hs, dist\build\parinfer\parinfer-tmp\StateX.o )
+[ 3 of 14] Compiling MaybeM           ( parinfer\MaybeM.hs, dist\build\parinfer\parinfer-tmp\MaybeM.o )
+[ 4 of 14] Compiling MyList           ( parinfer\MyList.hs, dist\build\parinfer\parinfer-tmp\MyList.o )
+[ 5 of 14] Compiling FiniteMap        ( parinfer\FiniteMap.hs, dist\build\parinfer\parinfer-tmp\FiniteMap.o )
+[ 6 of 14] Compiling Type             ( parinfer\Type.hs, dist\build\parinfer\parinfer-tmp\Type.o )
+
+parinfer\Type.hs:42:35: Warning: Tab character
+
+parinfer\Type.hs:44:11: Warning: Tab character
+
+parinfer\Type.hs:44:31: Warning: Tab character
+[ 7 of 14] Compiling Substitution     ( parinfer\Substitution.hs, dist\build\parinfer\parinfer-tmp\Substitution.o )
+[ 8 of 14] Compiling InferMonad       ( parinfer\InferMonad.hs, dist\build\parinfer\parinfer-tmp\InferMonad.o )
+
+parinfer\InferMonad.hs:50:1: Warning: Tab character
+
+parinfer\InferMonad.hs:51:1: Warning: Tab character
+[ 9 of 14] Compiling Term             ( parinfer\Term.hs, dist\build\parinfer\parinfer-tmp\Term.o )
+[10 of 14] Compiling Environment      ( parinfer\Environment.hs, dist\build\parinfer\parinfer-tmp\Environment.o )
+[11 of 14] Compiling Infer            ( parinfer\Infer.hs, dist\build\parinfer\parinfer-tmp\Infer.o )
+
+parinfer\Infer.hs:32:2: Warning: Tab character
+
+parinfer\Infer.hs:33:1: Warning: Tab character
+
+parinfer\Infer.hs:34:1: Warning: Tab character
+[12 of 14] Compiling Lex              ( dist\build\parinfer\parinfer-tmp\Lex.hs, dist\build\parinfer\parinfer-tmp\Lex.o )
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:329:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:330:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:331:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:335:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:336:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:340:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:342:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:346:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:348:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:352:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:361:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:375:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:377:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:378:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:379:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:381:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:382:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:383:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:384:5: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:386:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:389:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:390:1: Warning:
+    Tab character
+
+dist\build\parinfer\parinfer-tmp\Lex.hs:391:1: Warning:
+    Tab character
+[13 of 14] Compiling Parse            ( dist\build\parinfer\parinfer-tmp\Parse.hs, dist\build\parinfer\parinfer-tmp\Parse.o )
+[14 of 14] Compiling Main             ( parinfer\parinfer.hs, dist\build\parinfer\parinfer-tmp\Main.o )
+Linking dist\build\parinfer\parinfer.exe ...
+Preprocessing executable 'fwdense' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fwdense.hs, dist\build\fwdense\fwdense-tmp\Main.o )
+Linking dist\build\fwdense\fwdense.exe ...
+Preprocessing executable 'fwdense1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fwdense1.hs, dist\build\fwdense1\fwdense1-tmp\Main.o )
+Linking dist\build\fwdense1\fwdense1.exe ...
+Preprocessing executable 'fork' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( fork.hs, dist\build\fork\fork-tmp\Main.o )
+Linking dist\build\fork\fork.exe ...
+Preprocessing executable 'reminders' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( reminders.hs, dist\build\reminders\reminders-tmp\Main.o )
+Linking dist\build\reminders\reminders.exe ...
+Preprocessing executable 'reminders2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( reminders2.hs, dist\build\reminders2\reminders2-tmp\Main.o )
+Linking dist\build\reminders2\reminders2.exe ...
+Preprocessing executable 'mvar1' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar1.hs, dist\build\mvar1\mvar1-tmp\Main.o )
+Linking dist\build\mvar1\mvar1.exe ...
+Preprocessing executable 'mvar2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar2.hs, dist\build\mvar2\mvar2-tmp\Main.o )
+Linking dist\build\mvar2\mvar2.exe ...
+Preprocessing executable 'mvar3' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( mvar3.hs, dist\build\mvar3\mvar3-tmp\Main.o )
+Linking dist\build\mvar3\mvar3.exe ...
+Preprocessing executable 'logger' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( logger.hs, dist\build\logger\logger-tmp\Main.o )
+Linking dist\build\logger\logger.exe ...
+Preprocessing executable 'phonebook' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( phonebook.hs, dist\build\phonebook\phonebook-tmp\Main.o )
+Linking dist\build\phonebook\phonebook.exe ...
+Preprocessing executable 'chan' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( chan.hs, dist\build\chan\chan-tmp\Main.o )
+Linking dist\build\chan\chan.exe ...
+Preprocessing executable 'chan2' for parconc-examples-0.3.5...
+[1 of 1] Compiling Main             ( chan2.hs, dist\build\chan2\chan2-tmp\Main.o )
+Linking dist\build\chan2\chan2.exe ...
+Preprocessing executable 'geturls1' for parconc-examples-0.3.5...
+[1 of 2] Compiling GetURL           ( GetURL.hs, dist\build\geturls1\geturls1-tmp\GetURL.o )
+[2 of 2] Compiling Main             ( geturls1.hs, dist\build\geturls1\geturls1-tmp\Main.o )
+Linking dist\build\geturls1\geturls1.exe ...
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x3241): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x39d1): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x42a9): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\HTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC/libHSHTTP-4000.2.23-ChHIsjq9EH5911aWu2r0XC.a(TCP.o):fake:(.text+0x4c01): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x2832): undefined reference to `newAcceptParams'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x2846): undefined reference to `acceptDoProc'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0x288c): undefined reference to `acceptNewSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Socket.o):fake:(.text+0xc272): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x15b): undefined reference to `getWSErrorDescr'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x383): undefined reference to `shutdownWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x49b): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0x5cf): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(Internal.o):fake:(.text+0xa00): undefined reference to `initWinSock'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x13): undefined reference to `__imp_getnameinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x23): undefined reference to `__imp_getaddrinfo'
+C:\Users\bbasaran\AppData\Roaming\cabal\x86_64-windows-ghc-7.10.3\network-2.4.2.3-5tGgRsau8bp55ilaH1Keyw/libHSnetwork-2.4.2.3-5tGgRsau8bp55ilaH1Keyw.a(HsNet.o):HsNet.c:(.text+0x33): undefined reference to `__imp_freeaddrinfo'
+collect2.exe: error: ld returned 1 exit status
+
+bbasaran@BBASARAN-e7250 ~/fp/parconc-examples-0.3.5
+$
+
+* OLD
+* c:\Users\bbasaran\Documents\fp> cabal  unpack parconc-examples
+ cabal  unpack parconc-examples
+Downloading parconc-examples-0.3.5...
+Unpacking to parconc-examples-0.3.5\
+
+* c:\Users\bbasaran\Documents\fp> cd parconc-examples-0.3.5
+ cd parconc-examples-0.3.5
+
+* c:\Users\bbasaran\Documents\fp\parconc-examples-0.3.5> cabal install --only-dependencies
+ cabal install --only-dependencies
+Resolving dependencies...
+In order, the following would be installed:
+abstract-par-0.3.3 (via: monad-par-0.3.4.7 monad-par-extras-0.3.3) (new package)
+cereal-0.5.1.0 (via: monad-par-extras-0.3.3) (new package)
+data-accessor-0.2.2.7 (via: distributed-process-simplelocalnet-0.2.3.2 distributed-process-0.5.5.1 network-transport-tcp-0.4.2) (new package)
+fclabels-2.0.3 (new package)
+network-2.4.2.3 (latest: 2.6.2.1) (via: distributed-process-simplelocalnet-0.2.3.2 network-transport-tcp-0.4.2 network-multicast-0.1.0 HTTP-4000.2.23) (new version)
+HTTP-4000.2.23 (latest: 4000.3.3) -network-uri (new version)
+network-multicast-0.1.0 (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+network-transport-0.4.3.1 (via: distributed-process-simplelocalnet-0.2.3.2 distributed-process-0.5.5.1 network-transport-tcp-0.4.2) (new package)
+network-transport-tcp-0.4.2 (latest: 0.5.1) (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+random-1.0.1.1 (latest: 1.1) (via: QuickCheck-2.8.2 tf-random-0.5 distributed-process-0.5.5.1 normaldistribution-1.1.0.3 monad-par-extras-0.3.3 abstract-deque-0.3) (new version)
+abstract-deque-0.3 (via: monad-par-0.3.4.7) (new package)
+monad-par-extras-0.3.3 (via: monad-par-0.3.4.7) (new package)
+normaldistribution-1.1.0.3 (new package)
+rank1dynamic-0.3.2.0 (via: distributed-process-0.5.5.1 distributed-static-0.3.4.0) (new package)
+distributed-static-0.3.4.0 (via: distributed-process-0.5.5.1) (new package)
+distributed-process-0.5.5.1 (latest: 0.6.1) (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+distributed-process-simplelocalnet-0.2.3.2 (new package)
+tf-random-0.5 (via: QuickCheck-2.8.2) (reinstall) (changes: random-1.1 -> 1.0.1.1)
+QuickCheck-2.8.2 (via: repa-3.4.0.1) (new version)
+utf8-string-0.3.8 (latest: 1.0.1.1) (new package)
+vector-0.10.12.3 (latest: 0.11.0.0) (via: repa-3.4.0.1 mwc-random-0.13.4.0) (new version)
+mwc-random-0.13.4.0 (via: monad-par-0.3.4.7) (new package)
+monad-par-0.3.4.7 (new package)
+repa-3.4.0.1 (latest: 3.4.0.2) (new package)
+xml-1.3.14 (new package)
+cabal: The following packages are likely to be broken by the reinstalls:
+QuickCheck-2.8.1
+Use --force-reinstalls if you want to install anyway.
+
+* c:\Users\bbasaran\Documents\fp\parconc-examples-0.3.5> cabal build
+ cabal build
+Package has never been configured. Configuring with default flags. If this
+fails, please run configure manually.
+Resolving dependencies...
+Configuring parconc-examples-0.3.5...
+cabal: At least the following dependencies are missing:
+abstract-par ==0.3.*,
+fclabels -any,
+monad-par >=0.3.4 && <0.4,
+network >=2.3 && <2.5,
+normaldistribution ==1.1.*,
+random ==1.0.*,
+repa >=3.2 && <3.5,
+utf8-string ==0.3.*,
+vector ==0.10.*,
+xml ==1.3.*
+
+* c:\Users\bbasaran\Documents\fp\parconc-examples-0.3.5> cabal install --only-dependencies 
+ cabal install --only-dependencies 
+Resolving dependencies...
+In order, the following would be installed:
+abstract-par-0.3.3 (via: monad-par-0.3.4.7 monad-par-extras-0.3.3) (new package)
+cereal-0.5.1.0 (via: monad-par-extras-0.3.3) (new package)
+data-accessor-0.2.2.7 (via: distributed-process-simplelocalnet-0.2.3.2 distributed-process-0.5.5.1 network-transport-tcp-0.4.2) (new package)
+fclabels-2.0.3 (new package)
+network-2.4.2.3 (latest: 2.6.2.1) (via: distributed-process-simplelocalnet-0.2.3.2 network-transport-tcp-0.4.2 network-multicast-0.1.0 HTTP-4000.2.23) (new version)
+HTTP-4000.2.23 (latest: 4000.3.3) -network-uri (new version)
+network-multicast-0.1.0 (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+network-transport-0.4.3.1 (via: distributed-process-simplelocalnet-0.2.3.2 distributed-process-0.5.5.1 network-transport-tcp-0.4.2) (new package)
+network-transport-tcp-0.4.2 (latest: 0.5.1) (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+random-1.0.1.1 (latest: 1.1) (via: QuickCheck-2.8.2 tf-random-0.5 distributed-process-0.5.5.1 normaldistribution-1.1.0.3 monad-par-extras-0.3.3 abstract-deque-0.3) (new version)
+abstract-deque-0.3 (via: monad-par-0.3.4.7) (new package)
+monad-par-extras-0.3.3 (via: monad-par-0.3.4.7) (new package)
+normaldistribution-1.1.0.3 (new package)
+rank1dynamic-0.3.2.0 (via: distributed-process-0.5.5.1 distributed-static-0.3.4.0) (new package)
+distributed-static-0.3.4.0 (via: distributed-process-0.5.5.1) (new package)
+distributed-process-0.5.5.1 (latest: 0.6.1) (via: distributed-process-simplelocalnet-0.2.3.2) (new package)
+distributed-process-simplelocalnet-0.2.3.2 (new package)
+tf-random-0.5 (via: QuickCheck-2.8.2) (reinstall) (changes: random-1.1 -> 1.0.1.1)
+QuickCheck-2.8.2 (via: repa-3.4.0.1) (new version)
+utf8-string-0.3.8 (latest: 1.0.1.1) (new package)
+vector-0.10.12.3 (latest: 0.11.0.0) (via: repa-3.4.0.1 mwc-random-0.13.4.0) (new version)
+mwc-random-0.13.4.0 (via: monad-par-0.3.4.7) (new package)
+monad-par-0.3.4.7 (new package)
+repa-3.4.0.1 (latest: 3.4.0.2) (new package)
+xml-1.3.14 (new package)
+cabal: The following packages are likely to be broken by the reinstalls:
+QuickCheck-2.8.1
+Use --force-reinstalls if you want to install anyway.
+
+* c:\Users\bbasaran\Documents\fp\parconc-examples-0.3.5> cabal install --only-dependencies --force-reinstalls
+ cabal install --only-dependencies --force-reinstalls
+Resolving dependencies...
+Warning: The following packages are likely to be broken by the reinstalls:
+QuickCheck-2.8.1
+Continuing even though the plan contains dangerous reinstalls.
+Downloading abstract-par-0.3.3...
+Downloading cereal-0.5.1.0...
+Downloading data-accessor-0.2.2.7...
+Downloading fclabels-2.0.3...
+Configuring cereal-0.5.1.0...
+Configuring abstract-par-0.3.3...
+Downloading network-2.4.2.3...
+Downloading network-transport-0.4.3.1...
+Configuring data-accessor-0.2.2.7...
+Configuring fclabels-2.0.3...
+Downloading random-1.0.1.1...
+Downloading rank1dynamic-0.3.2.0...
+Downloading utf8-string-0.3.8...
+Downloading vector-0.10.12.3...
+Downloading xml-1.3.14...
+Building abstract-par-0.3.3...
+Building data-accessor-0.2.2.7...
+Building fclabels-2.0.3...
+Building cereal-0.5.1.0...
+Installed abstract-par-0.3.3
+Configuring network-transport-0.4.3.1...
+Configuring network-2.4.2.3...
+Installed data-accessor-0.2.2.7
+Building network-transport-0.4.3.1...
+Configuring random-1.0.1.1...
+Installed fclabels-2.0.3
+Configuring rank1dynamic-0.3.2.0...
+Installed cereal-0.5.1.0
+Building random-1.0.1.1...
+Configuring utf8-string-0.3.8...
+Installed network-transport-0.4.3.1
+Building rank1dynamic-0.3.2.0...
+Configuring vector-0.10.12.3...
+Configuring xml-1.3.14...
+Installed rank1dynamic-0.3.2.0
+Downloading distributed-static-0.3.4.0...
+Failed to install network-2.4.2.3
+Build log ( C:\Users\bbasaran\AppData\Roaming\cabal\logs\network-2.4.2.3.log ):
+[1 of 1] Compiling Main             ( C:\Users\bbasaran\AppData\Local\Temp\cabal-tmp-5057\network-2.4.2.3\dist\setup\setup.hs, C:\Users\bbasaran\AppData\Local\Temp\cabal-tmp-5057\network-2.4.2.3\dist\setup\Main.o )
+Linking C:\Users\bbasaran\AppData\Local\Temp\cabal-tmp-5057\network-2.4.2.3\dist\setup\setup.exe ...
+Configuring network-2.4.2.3...
+setup-Configure-Cabal-1.22.5.0-x86_64-windows-ghc-7.10.3.exe: The package has
+a './configure' script. This requires a Unix compatibility toolchain such as
+MinGW+MSYS or Cygwin.
+Building utf8-string-0.3.8...
+Configuring distributed-static-0.3.4.0...
+Installed random-1.0.1.1
+Downloading abstract-deque-0.3...
+Downloading monad-par-extras-0.3.3...
+Downloading normaldistribution-1.1.0.3...
+Downloading tf-random-0.5...
+Building vector-0.10.12.3...
+Building xml-1.3.14...
+Building distributed-static-0.3.4.0...
+Installed utf8-string-0.3.8
+Configuring abstract-deque-0.3...
+Configuring monad-par-extras-0.3.3...
+Installed distributed-static-0.3.4.0
+Downloading distributed-process-0.5.5.1...
+Configuring normaldistribution-1.1.0.3...
+Installed xml-1.3.14
+Building abstract-deque-0.3...
+Building monad-par-extras-0.3.3...
+Building normaldistribution-1.1.0.3...
+Configuring tf-random-0.5...
+Installed abstract-deque-0.3
+Installed normaldistribution-1.1.0.3
+Configuring distributed-process-0.5.5.1...
+Installed monad-par-extras-0.3.3
+Building tf-random-0.5...
+Building distributed-process-0.5.5.1...
+Installed tf-random-0.5
+Downloading QuickCheck-2.8.2...
+Configuring QuickCheck-2.8.2...
+Building QuickCheck-2.8.2...
+Installed QuickCheck-2.8.2
+Installed vector-0.10.12.3
+Downloading mwc-random-0.13.4.0...
+Downloading repa-3.4.0.1...
+Configuring mwc-random-0.13.4.0...
+Configuring repa-3.4.0.1...
+Installed distributed-process-0.5.5.1
+Building mwc-random-0.13.4.0...
+Building repa-3.4.0.1...
+Installed repa-3.4.0.1
+Installed mwc-random-0.13.4.0
+Downloading monad-par-0.3.4.7...
+Configuring monad-par-0.3.4.7...
+Building monad-par-0.3.4.7...
+Installed monad-par-0.3.4.7
+cabal: Error: some packages failed to install:
+HTTP-4000.2.23 depends on network-2.4.2.3 which failed to install.
+distributed-process-simplelocalnet-0.2.3.2 depends on network-2.4.2.3 which
+failed to install.
+network-2.4.2.3 failed during the configure step. The exception was:
+ExitFailure 1
+network-multicast-0.1.0 depends on network-2.4.2.3 which failed to install.
+network-transport-tcp-0.4.2 depends on network-2.4.2.3 which failed to
+install.
+
+* The end

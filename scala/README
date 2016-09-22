@@ -1,0 +1,28 @@
+See:  ~/fp/rp/README.scala
+See: ~/fp/scala/week6-assignment
+
+* Eclipse: (C-Shift-F to beautify (indent it all))
+  c:/Users/bbasaran/fp/workspace/procfun/src/week4/huffman.scala
+  c:/Users/bbasaran/fp/workspace/procfun/src/week3/package.scala
+  c:/Users/bbasaran/fp/workspace/procfun/src/week1/cTailRecursion.sc
+
+
+* IntelliJ idea: (C-Alt-I to beautify)
+code completion (smarttype): Ctrl-Shift-Space
+
+  c:/Users/bbasaran/scala/patmat/patmat/src/main/scala/patmat/Huffman.scala
+  c:/Users/bbasaran/scala/objsets/objsets/src/main/scala/objsets/TweetSet.scala
+  c:/Users/bbasaran/scala/recfun/src/main/scala/recfun/Main.scala
+
+1	 Close project
+2	 import proect
+
+	  Alt F12
+	  sbt
+	  compile
+	  run
+	  test
+	  submit bulent2k2@gmail.com <key>
+
+gAZhMB7nhc9O5vFN
+SQZFMfhk8zDpqzSj
